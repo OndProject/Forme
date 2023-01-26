@@ -1,0 +1,242 @@
+@charset "UTF-8";
+    /* 웹폰트 */    
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+    body{
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: large;
+        height : auto;
+    }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .pull-right {
+        display: flex;
+      }
+
+  /* 인기수강 */
+  .popular{
+    width: 100%;
+  }
+  .p_img{
+    width: 320px; 
+    height: 260px; 
+  
+    border-radius: 20px;
+  } 
+  .p_article:hover img{
+    transform: scale(1.1);
+    transition: transform .35s;
+  }
+  .p_class{
+    width: 320px; 
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .p_article{
+    height: 400px;
+    width: 500;
+    float : left;
+    margin-left: 50px;
+    padding-left: 10px;
+  }
+      /*구간 표시 위해서 */
+  .p_row{     
+    height : 450px;   
+    margin-left: 15px;
+    padding-top: 50px;
+  }
+  .p_small{
+      margin : 2px;
+  }
+  .p_title{
+    margin : 2px;
+    height : 50px;
+  }
+  .p_price{
+    margin : 0px 15px ;
+    text-align: right;
+    font-size : 23px; 
+  }
+  .p_star{
+    text-align: right;
+    margin : 0px 20px ;
+  }
+      /*a태그 관련*/
+  .popular a{
+    text-decoration:none !important; 
+  }
+  .popular a:link{
+    color:black; 
+  }
+  .popular a:visited {
+    color : black;
+  }
+  .popular a:hover {
+    color : black !important;
+  }   
+  
+  .btn-write{
+    width: 90px;
+    height: 30px;
+    background-color:rgb(47, 153, 244);
+    border: 2px solid rgb(47, 153, 244);
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    clear: both;
+  }
+
+  .btn-write:hover{
+    background-color:#007aff ;
+    border: none;
+    transition-duration: 0.5s;
+  }
+  
+  .btn-span{
+    height: 100px;
+    width: 1300px;
+    float : left;
+    margin-left: 50px;
+    padding-left: 10px;
+  }
+
+  .pagination{
+
+    margin-bottom: 100px;
+  }
+	/*카테고리*/
+	.container{
+	hegith : 1000px;
+
+	}
+
+	.kategori{
+    text-align: center;
+    margin-bottom:50px;
+	}
+
+	.kategori2{
+		padding : 2vw;
+		width : 100%;
+		align-content: center;
+		font-size : 60px;
+		font-weight: 900;
+	  	background-color: snow;
+	}
+  
+  /*검색*/
+  .search_btn{
+  	background-color:rgb(47, 153, 244);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(47, 153, 244);
+    border-radius : 15px;
+    color: white;
+    margin : 10px 140px 10px 0;
+    width : 55px;
+    height : 40px;
+  }
+  
+  #sform {
+          display: inline-block;
+          text-align: center;
+        }
+  
+   .search_btn:hover{
+       background-color:#007aff ;    
+  	   border: 2px solid #007aff;
+       transition-duration: 0.5s;
+   }
+
+	.keyword{
+  		margin : 10px;
+		border : 2px solid gainsboro;
+		border-radius: 5px;
+		font-size : 15px;
+		width : 250px;
+		height : 45px;
+	}
+	.keyword:focus{
+	    border: 2px solid rgb(47, 153, 244);
+    	outline: none;
+	}
+
+	.kategori_btn{
+	  	background-color:snow;
+	    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+	    border: 2px solid rgb(47, 153, 244);
+	    border-radius : 20px;
+	    color: rgb(47, 153, 244);
+	    font-weight : bold;
+	    margin : 3px;
+	}
+	
+	.kategori_btn_select{
+		background-color: #007aff;
+	    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+	    border: 2px solid #007aff;
+	    border-radius : 20px;
+	    color: white;
+	    font-weight : bold;
+	    margin : 3px;
+	}
+		 
+	  .kategori_btn:hover{
+       background-color:#007aff ;    
+  	   border: 2px solid #007aff;
+       transition-duration: 0.5s;
+       color : white;
+   }
+	
+	.k_btns{
+		display: block;
+		height :50px;
+		margin-top : 50px;
+		margin-left : 50px;
+
+	}
+	
+	
+    li{
+        list-style: none;
+        line-height: 30px;
+        float: left;
+  
+    }

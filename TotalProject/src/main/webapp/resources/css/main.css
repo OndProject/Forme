@@ -1,0 +1,383 @@
+@charset "UTF-8";
+    /* 웹폰트 */    
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+    body{
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: large;
+    }
+
+/* 전체적인 */
+  .full-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 0px 100px auto ;
+    grid-template-columns: 100vw;
+    padding: 0%;
+    margin: 0%;
+  }
+  .item{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+  }
+  .row{
+    width:100%;
+  }
+  html {
+     scroll-behavior: smooth;
+   }
+
+/*헤더*/
+  header {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(47, 153, 244);
+  }
+  header > h1 {
+    margin-left:20px;
+    font: size 50px;
+  }
+  header > h1 > a {
+    color: rgb(47, 153, 244);
+    display:inline-block;
+  }
+  header > nav {
+    width:700px;
+    height:100%;
+  }
+  header ul {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header ul > li {
+    font-size:15px;
+    height: 100%;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+  }
+  header ul > li > a {
+    color: rgb(47, 153, 244);
+  }
+  .search{
+    height:10px;
+    margin-top:30px;
+  }
+  .fa-search {
+    color: gray;
+    font-size: 20px;
+  }
+  input {
+    width: 200px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: lightgrey;
+  }
+  .login{
+    border-radius: 25px;
+    border : 1px solid rgb(47, 153, 244);
+    background-color: rgb(47, 153, 244);
+    color: white;
+    padding : 2px 5px;
+    margin-bottom: 10px;
+    margin-right: 110px;
+  }
+    
+  header img{
+    margin-left: 20px;
+    float: inline-start;
+    height:80px;
+  }
+
+  /* 네비 바 */
+  .navbar{ 
+    border: none; 
+    padding-bottom: 10px;  
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 1000; 
+    font-size: 18px;
+    text-transform: capitalize; 
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 99vw;
+  }
+  .navbar-default{
+    width: 100%;
+    height:auto;
+  }
+  .navbar-list {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding-left: 5%;
+  }
+  .navbar-list li { 
+    float: left;
+    padding: 0 20px; 
+    width: 18%;
+    padding-top: 1.5%;
+  }
+  .navbar-default .navbar-list > li > a{
+    color: #cff819;
+    background-color: black;
+  }
+  .navbar-default .navbar-list > li > a:hover{
+    color: rgb(218, 41, 224);
+    background-color: black;
+  }
+  .navbar-list > a{
+    text-align: center;
+  }
+  
+  /* 메인 이미지*/
+  @import "compass/css3";
+  @font-face {
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/Anders.ttf');
+    font-family: test;
+  }
+  .scene h1 {
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(220, 35, 164);
+    z-index:5;
+    font-weight: bold;
+  }
+  .scene a {
+    margin: 10px;
+  }
+  .scene a.e {
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(255, 185, 55);
+    z-index:5;
+  }
+  .scene a.n {
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(55, 222, 255);
+    z-index:5;
+  }
+  .scene a.j{
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(147, 58, 255);
+    z-index:5;
+  }
+  .scene a.o{
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(255, 55, 55);
+    z-index:5;
+  }
+  .scene a.y{
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-family: test;
+    color: rgb(41, 144, 255);
+    z-index:5;
+  }
+  .scene, .scene:before, .scene:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .scene {
+    position: relative;
+    background:#fff2cc;
+    padding: 15rem;
+    text-align: center;
+    font-size: 62.5%;
+    height: 50%;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  .magic {
+    z-index: 5;
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    background: url('../images/main/main.jpg') 50% 50% no-repeat fixed;
+    border-radius: 50%;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+/* 카테고리 */
+  .ct_img{
+    width: 300px; 
+    height: 270px; 
+    filter: grayscale(0%);
+    border-radius: 30px;
+  } 
+  .ct_article:hover .ct_img{
+    transform: scale(1.05);
+    transition: transform .35s;
+    filter: grayscale(70%);
+  }
+  
+  .category{
+    width: 100%;
+  }
+  .ct_title{
+    width: 100%;
+    padding-left: 100px;
+    margin: 30px;
+  }
+  .ct_list{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+  }
+  .ct_list1  .ct_list_2{
+    width: 100%;
+    margin: 10px;
+  }
+  .ct_list_box{
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  } 
+
+
+/* 인기수강 */
+  .popular{
+    width: 100%;
+  }
+  .p_img{
+    width: 270px; 
+    height: 180px; 
+  } 
+  .p_article:hover .p_img{
+    transform: scale(1.1);
+    transition: transform .35s;
+  }
+  .p_class{
+    width: 270px; 
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .p_article{
+    float : left;
+    margin: 5px 15px;
+  }
+      /*구간 표시 위해서 */
+  .p_row{     
+    height : 600px;   
+    margin : auto 0 ;
+  }
+  .p_small{
+      margin : 2px;
+  }
+  .p_title{
+    margin : 2px;
+    height : 50px;
+  }
+  .p_price{
+    margin : 0px 15px ;
+    text-align: right;
+    font-size : 23px; 
+  }
+  .p_star{
+    text-align: right;
+    margin : 0px 20px ;
+  }
+      /*a태그 관련*/
+  .popular a{
+    text-decoration:none !important; 
+  }
+  .popular a:link{
+    color:black; 
+  }
+  .popular a:visited {
+    color : black;
+  }
+  .popular a:hover {
+    color : black !important;
+  }   
+
+
+  /*유튜브 동영상*/
+  .yt_container {
+    width: 100%;
+    height: auto;
+    background-color: lightblue; /*수정필요*/
+  }
+  .ytle{
+    margin-top: 200px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .pad10{
+    padding-right : 30px;
+    margin-left: 60px;
+  }
+  
+
+/*자주 묻는 질문*/
+  .QnA{
+    width: 100%;
+    background-color: lightblue; /*수정필요*/
+    padding: 30px;
+    -webkit-appearance: none;
+   -webkit-border-radius: 0;
+  }
+  .panel a.collapsed {    
+    color: rgb(7, 7, 7);
+  }
+  .panel-body {
+    color: #13477d;
+  }
+  .panel-group{
+    background-color:  rgb(43, 41, 41);
+  }
+  .panel-heading{
+    background-color:  #748eb6;
+  }
+  .panel-title{
+    background-color: #748eb6;
+  }
+  .panel-body{
+    background-color: #acd8e2;
+  }
+
+/*풋터*/
+  .footer footer {
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+    background-color: snow;
+    margin-left: 200px;
+  }
+  .footer a:link {
+    color : black;
+  }
+  .footer a:hover {
+    color : gray;
+  }
+  

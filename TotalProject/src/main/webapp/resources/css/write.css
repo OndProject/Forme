@@ -1,0 +1,260 @@
+@charset "UTF-8";
+    /* 웹폰트 */    
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+	html {
+	  scroll-behavior: smooth;
+	}
+    body{
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: large;
+    }
+
+    textarea.autosize{
+        min-height: 100px; 
+        width : 100%;
+        padding: 10px;
+        margin : 10px;
+        overflow:auto;
+        border : 2px solid gainsboro;
+        outline-color: rgb(47, 153, 244);
+        border-radius: 5px;
+        resize: none;
+        font-size: 15px;
+        }
+
+	.address input{
+		margin : 5px;
+		border : 2px solid gainsboro;
+		border-radius: 5px;
+		font-size : 15px;
+	}
+	.address input:focus{
+	    border: 2px solid rgb(47, 153, 244);
+    	outline: none;
+	}
+    .container{
+        width: 100vw;
+    }
+    
+    /*navbar고정*/
+    #navbar-example2{
+        width : 100%;
+        top : 0;
+		position:sticky;
+    }
+
+
+    /*navbar스타일 */
+    .navbar{
+       /* background-color: rgb(47, 153, 244) !important; */
+       background-color:white!important;
+        border-radius: 5px;
+    }
+
+    .nav-link{
+        color : black;
+        margin: auto;
+    }
+
+    .nav-link:hover{
+        color : rgb(47, 153, 244) ;
+    }
+    .nav-item{
+        padding: 0px 20px;
+    }
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+    /*navbar 밑줄 */
+    .nav nav-pills {display: block; margin-bottom: 50px;}
+    .nav-item {
+        position: relative; 
+        display: inline-block; 
+        height: 40px; 
+        text-align: center; 
+        line-height: 30px; 
+        }
+
+    #fromInsideOut li::after {
+        position: absolute; 
+        content:""; 
+        display: block; 
+        border-bottom: 3px solid rgb(47, 153, 244); 
+        transition: all 250ms ease-out; 
+        left: 50%; 
+        width: 0;}
+
+    #fromInsideOut li:hover::after {
+        transition: all 250ms ease-out; 
+        left: 0%; 
+        width: 100%;}
+    
+    /*나비바 스크롤.. 효과는 위에 밑줄과 같게.
+    .navbar-example2.active{
+        color : yellow;
+        background-color: red;
+
+    }
+    */
+    
+    h4{
+        background-color: lemonchiffon;
+        /*inline 안되고있음.*/
+        display: inline;
+
+    }
+
+    .ontop {
+    position: fixed;
+    bottom: 20px;
+    right: 300px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border : none;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    /*속성확인 필요*/
+    box-sizing: border-box;
+    font: inherit;
+
+    }    
+
+    /* 수강신청창 */
+    .col-md-4{
+    	height: 300vw;
+    }
+    .application{
+        border: solid 1px gainsboro;
+        height : 600px;
+        top : 40px;
+ 		position :sticky;
+        border-radius: 10px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .time{
+        list-style-type: none; 
+        padding-right : 100px;
+    }
+    .date{
+        list-style-type: none; 
+        padding-right : 100px;
+    }
+
+    #startDate{
+        height: 30px;
+    }
+
+    /*이미지 위치조정*/
+    .class_img{
+        padding : 30px 0px;
+        text-align: center !important;
+        width :600px;
+        height : 450px;
+        margin : auto;
+        border: solid 1px gainsboro;
+        border-radius: 10px;
+    }
+
+
+
+    li{
+        list-style: none;
+        line-height: 40px;
+    }
+
+    /*수강 신청 창 div줄 간격 > 안됨*/
+    .app_menu{
+        line-height: 50px;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .name {
+        font-size : 16px;
+    }
+
+    .price{
+        float: right;
+        margin: 0px 50px; 
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* 버튼 스타일 */
+    
+    .btns{
+    	line-height: 40px;
+    	 text-align:center;
+    	}
+    	
+    .btn{
+        margin: 0 auto;
+        width: 320px;
+        height : 70px;
+        border-radius: 10px;
+    }
+    .btn-1{
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn-1:hover{
+        background-color:rgba(0, 0, 0, 0.13) ;
+        border: none;
+        transition-duration: 0.5s;
+    }
+	
+	.uploadbtn{
+        margin: auto;
+        width: 110px;
+        height : 30px;
+        border-radius: 10px;
+        background-color:rgb(47, 153, 244);
+        margin-top : 150px;
+       
+        }
+        
+     .upload{
+        font-size: 15px;
+        color: white;
+    }
+    
+     .uploadbtn:hover{
+        background-color:#007aff ;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .save_1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn-2{
+        background-color:rgb(47, 153, 244);
+        border: 2px solid rgb(47, 153, 244);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-2:hover{
+        background-color:#007aff ;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .save_2{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+
+    
