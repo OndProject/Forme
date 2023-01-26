@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* 웹폰트 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+    body{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: large;
+    }
+    pre{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: large;
+    }
+    
+    
+    
+    
+    .container{
+        width: 100%;
+    }
+    
+    /*navbar고정*/
+    #navbar-example2{
+        position : sticky;
+        width : 100%;
+        top : 0;
+
+    }
+
+    /*navbar스타일 */
+    .navbar{
+       /* background-color: rgb(47, 153, 244) !important; */
+       background-color:white!important;
+        border-radius: 5px;
+    }
+
+    .nav-link{
+        color : black;
+        margin: auto;
+    }
+
+    .nav-link:hover{
+        color : rgb(47, 153, 244) ;
+    }
+    .nav-item{
+        padding: 0px 30px;
+    }
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+    /*navbar 밑줄 */
+    .nav nav-pills {display: block; margin-bottom: 50px;}
+    .nav-item {
+        position: relative; 
+        display: inline-block; 
+        height: 40px; 
+        text-align: center; 
+        line-height: 30px; 
+        }
+
+    #fromInsideOut li::after {
+        position: absolute; 
+        content:""; 
+        display: block; 
+        border-bottom: 3px solid rgb(47, 153, 244); 
+        transition: all 250ms ease-out; 
+        left: 50%; 
+        width: 0;}
+
+    #fromInsideOut li:hover::after {
+        transition: all 250ms ease-out; 
+        left: 0%; 
+        width: 100%;}
+    
+    /*나비바 스크롤.. 효과는 위에 밑줄과 같게.
+    .navbar-example2.active{
+        color : yellow;
+        background-color: red;
+
+    }
+    */
+    
+    h4{
+        background-color: lemonchiffon;
+        /*inline 안되고있음.*/
+        display: inline;
+
+    }
+
+    .ontop {
+    position: fixed;
+    bottom: 20px;
+    right: 300px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border : none;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    /*속성확인 필요*/
+    box-sizing: border-box;
+    font: inherit;
+
+    }    
+
+    /* 수강신청창 */
+    .application{
+        border: solid 1px gainsboro;
+        height : 600px;
+        position : sticky;
+        top : 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /*이미지 위치조정*/
+    .class_img{
+        padding : 30px 0px;
+        text-align: center !important;
+    }
+
+    img{
+        width :600px;
+        height : 450px;
+        margin : auto;
+    }
+
+    /* 반응형 그리드? */
+    div{
+        display: grid;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    /*수강 신청 창 div 줄 간격*/
+    .app_menu{
+        line-height: 50px;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .name {
+        font-size : 16px;
+    }
+
+    .price{
+        float: right;
+        margin: 0px 50px; 
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* 버튼 스타일 */
+    .btn{
+        margin: 0 auto;
+        width: 320px;
+        height : 70px;
+        border-radius: 10px;
+    }
+    .btn-1{
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    }
+    .btn-1:hover{
+        background-color:rgba(0, 0, 0, 0.1) ;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+
+    .sub_1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn-2{
+        background-color:rgb(47, 153, 244);
+        border: 2px solid rgb(47, 153, 244);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-2:hover{
+        background-color:#007aff ;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .sub_2{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .heart{
+        box-sizing: border-box;
+        margin: 0 0 0 10px;
+        padding: 0px;
+        font: inherit;
+        border: 0px none;
+        vertical-align: middle;
+        position: relative;
+        height: 21px;
+        margin-bottom: 3px;
+        width: 24px;
+        text-align:center;
+    }
