@@ -144,5 +144,9 @@ public class DetailController {
 		return "sellerpostingcheck";
 	}
 	
+	@RequestMapping("/sellerbuyercheck")
+	public String sellerbuyercheck() {
+		return "sellerbuyercheck";
+	}
 	
 };
