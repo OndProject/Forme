@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>   
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +15,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
        
     
-    
-      <!-- 헤더 검색창 -->
-      <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
+	  <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
+      
       
       <!-- 메인 스크립트-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,23 +26,40 @@
 
 </head>
 <body>
- <!--헤더-->
-      <div class="item header">
-        <header>
-          <a class="logo" href ="<c:url value ='/main'/>">
+
+   <div>
+    <header class="full">
+        <section class="ext">
+
+          <!-- 로고 -->
+          <a aria-label="logo" href ="<c:url value ='/main'/>" class="logo">
             <img src="resources/images/header/logo.png">
           </a>
-              
-          <nav>
-            <ul>
-                <div class="search">
-                    <input type="text" placeholder="검색어를 입력해주세요.">
-                    <a href=""><i class="fas fa-search"></i></a>
-                </div>
-                <li><a href ="<c:url value ='/login'/>" class ="login"><button type="button" class="btn btn text-white" style="background-color: rgb(47, 153, 244);"><b>로그인</b></button></a></li>
-            </ul>
-          </nav>
-        </header>
-      </div> <!--헤더 end-->
+
+          <div class="gap" style="flex-grow: 1;"></div>
+
+          <!-- 검색창-->
+          <form role="search" class="search">
+              <div class="search-boad">
+                  <input data-testid="search-input" type="text" placeholder="검색어를 입력하세요" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-box" value="" />
+
+                  <div class="search-btn-box">
+                      <span role="img" rotate="0" class="search-btn">
+                        <i class="fas fa-search"></i>
+                      </span>
+                  </div>
+
+              </div>
+          </form>
+          
+          <!--로그인-->
+          <div class="login-box">
+              <a href ="<c:url value ='/login'/>"><button type="button" class="log-btn">로그인</button></a>
+          </div>
+        </section >
+        
+    </header>
+  </div>
+  
 </body>
 </html>

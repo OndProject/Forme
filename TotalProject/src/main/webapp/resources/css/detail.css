@@ -13,8 +13,27 @@
         font-family: "Noto Sans KR", sans-serif;
         font-size: large;
         border : none;
+        font-weight : bold;
+    }
+
+	h4{
+		font-size : 20px;
+		font-weight : bold;
+	}
+	#map{
+		align : center;
+	}
+    .container{
+        width: 100vw;
     }
     
+    /*navbar고정*/
+    #navbar-example2{
+        width : 100%;
+        top : 0;
+		position:sticky;
+    }
+
 
     /*navbar스타일 */
     .navbar{
@@ -73,15 +92,14 @@
     
     h4{
         background-color: lemonchiffon;
-        /*inline 안되고있음.*/
         display: inline;
 
     }
-
+    
     .ontop {
     position: fixed;
     bottom: 20px;
-    right: 50px;
+    right: 300px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -92,8 +110,15 @@
     box-sizing: border-box;
     font: inherit;
 
-    }
-        
+    }    
+      .su_form{
+      	font-weight : bold;
+      }
+      .summary{
+      	float : left;
+      	padding : 0px 30px;
+      }  
+       
      li{
         list-style: none;
         line-height: 40px;
@@ -124,6 +149,12 @@
     .time{
         list-style-type: none; 
         padding-right : 100px;
+        float : left;
+    }
+    
+    .time2{
+    	font-size : 21px;
+    	font-weight : bold;
     }
     .date{
         list-style-type: none; 
@@ -328,4 +359,29 @@
         width: 24px;
     }
 
-    
+    /*modal창*/
+	.modal-mypage{
+		backgroun-color: snow;
+		border : 2px solid snow;
+		border-radius: 10px;
+		font-size : 12px;
+		height : 30px;
+	}
+	
+
+	.modal-close{
+		background-color:rgb(47, 153, 244);
+		border: 2px solid rgb(47, 153, 244);
+		color : white;
+		border-radius : 10px;
+		font-size : 12px;
+		height : 30px;
+		margin : 0px 10px;
+
+	}
+	
+	.modal-body{
+		text-align : center;
+		font-weight : bold;
+	}
+ 

@@ -56,6 +56,15 @@ $(document).ready(function(){
 
         //버튼 클릭 시, 스크롤 이동 막기
       
+        
+        //달력 날짜 최솟값
+        var now_utc = Date.now()
+        var timeOff = new Date().getTimezoneOffset()*60000;
+        var today = new Date(now_utc-timeOff).toISOString().split("T")[0];
+        document.getElementById("startDate").setAttribute("min", today);
+
+        //
+
 });
 
 
@@ -64,4 +73,24 @@ function resize(obj) {
     obj.style.height = (12+obj.scrollHeight)+"px";
   }; //textarea늘어나게
 
+//다중선택리스트
+  function categoryChange(e) {
+		var good_a = ["9시", "10시", "11시", "12시"];
+		var good_b = ["1시", "2시", "3시", "4시", "5시", "6시", "7시"];
+		var good_c = ["협의"];
+		var target = document.getElementById("classtime");
 
+		if(e.value == "a") var d = good_a;
+		else if(e.value == "b") var d = good_b;
+		else if(e.value == "c") var d = good_c;
+
+		target.options.length = 0;
+
+		for (x in d) {
+			var opt = document.createElement("option");
+			opt.value = d[x];
+			opt.innerHTML = d[x];
+			target.appendChild(opt);
+		}
+	};
+ 

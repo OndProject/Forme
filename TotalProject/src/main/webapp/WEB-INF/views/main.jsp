@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ include file="includes/header.jsp"%>
 
 <!DOCTYPE html>
 <html>
@@ -14,16 +15,12 @@
       <!-- 부가적인 테마 -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
        
-    
-    
-      <!-- 헤더 검색창 -->
-      <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
-      
+   
       <!-- 메인 스크립트-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+      <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/main.js"></script>
       
-      <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css?ver=1">
+      <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css?ver=1000">
 
       
        
@@ -33,26 +30,6 @@
 <body>
   <div class="container full-container">
     
-      <!--헤더-->
-      <div class="item header">
-        <header>
-          <a class="logo" href ="<c:url value ='/main'/>">
-            <img src="resources/images/header/logo.png">
-          </a>
-              
-          <nav>
-            <ul>
-                <div class="search">
-                    <input type="text" placeholder="검색어를 입력해주세요.">
-                    <a href=""><i class="fas fa-search"></i></a>
-                </div>
-                <li><a href ="<c:url value ='/login'/>" class ="login"><button type="button" class="btn" style="background-color: rgb(47, 153, 244);"><b>로그인</b></button></a></li>
-            </ul>
-          </nav>
-        </header>
-      </div> <!--헤더 end-->
-
-      
 
   <!-- main -->
   <div class="item main">
@@ -93,18 +70,18 @@
       
             <div class="row ct_list_1">
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"> <a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr1.png" alt="..." class="ct_img"></a></div>
-                 <a href ="<c:url value ='/board'/>"><p class="ct-name"><h1>스포츠  / 레저</h1></p></a>                               
+                <div class = "ct_class"> <a href ="<c:url value ='/boardsport'/>"><img src="resources/images/category/ctgr1.png" alt="..." class="ct_img"></a></div>
+                 <a href ="<c:url value ='/boardsport'/>"><p class="ct-name"><h1>스포츠  / 레저</h1></p></a>                               
               </div>     
       
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"><a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr2.png" alt="..." class="ct_img"></a></div>
-                <a href ="<c:url value ='/board'/>"><h1>언어 / 교육</h1></p></a>                               
+                <div class = "ct_class"><a href ="<c:url value ='/boardlanguage'/>"><img src="resources/images/category/ctgr2.png" alt="..." class="ct_img"></a></div>
+                <a href ="<c:url value ='/boardlanguage'/>"><h1>언어 / 교육</h1></p></a>                               
               </div>   
       
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"><a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr3.png" alt="..." class="ct_img"></a></div>
-                <a href ="<c:url value ='/board'/>"><p class="ct-name"><h1>문화 / 예술</h1></p></a>                               
+                <div class = "ct_class"><a href ="<c:url value ='/boardculture'/>"><img src="resources/images/category/ctgr3.png" alt="..." class="ct_img"></a></div>
+                <a href ="<c:url value ='/boardculture'/>"><p class="ct-name"><h1>문화 / 예술</h1></p></a>                               
               </div> 
             </div>          
       
@@ -112,18 +89,18 @@
       
             <div class="row ct_list_2">       
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"><a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr4.png" alt="..." class="ct_img"></a></div>
-                <a href ="<c:url value ='/board'/>"><p class="ct-name"><h1>요리 / 음료</h1></p></a>                               
+                <div class = "ct_class"><a href ="<c:url value ='/boardcook'/>"><img src="resources/images/category/ctgr4.png" alt="..." class="ct_img"></a></div>
+                <a href ="<c:url value ='/boardcook'/>"><p class="ct-name"><h1>요리 / 음료</h1></p></a>                               
               </div>    
       
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"><a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr5.jpg" alt="..." class="ct_img"></a></div>
-                <a href ="<c:url value ='/board'/>"><p class="ct-name"><h1>핸드 메이드</h1></p></a>                               
+                <div class = "ct_class"><a href ="<c:url value ='/boardhandmade'/>"><img src="resources/images/category/ctgr5.jpg" alt="..." class="ct_img"></a></div>
+                <a href ="<c:url value ='/boardhandmade'/>"><p class="ct-name"><h1>핸드 메이드</h1></p></a>                               
               </div>   
       
               <div class="col-6 col-md-4 ct_article" onclick="location.href='http://google.com'">
-                <div class = "ct_class"><a href ="<c:url value ='/board'/>"><img src="resources/images/category/ctgr6.png" alt="..." class="ct_img"></a></div>
-                <a href ="<c:url value ='/board'/>"><p class="ct-name"><h1>기타</h1></p></a>                               
+                <div class = "ct_class"><a href ="<c:url value ='/boardother'/>"><img src="resources/images/category/ctgr6.png" alt="..." class="ct_img"></a></div>
+                <a href ="<c:url value ='/boardother'/>"><p class="ct-name"><h1>기타</h1></p></a>                               
               </div> 
       
             </div>  

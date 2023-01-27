@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="includes/header.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,9 +42,10 @@
 
             <hr>
             <div class="login_at"> 
-                <a href="" >회원가입</a>&nbsp|
-                <a href="" >아이디 찾기</a>&nbsp|
-                <a href="" >비밀번호 찾기</a>
+                <a href ="<c:url value ='/write'/>">회원가입</a>&nbsp|
+                <a href ="<c:url value ='/findid'/>">아이디 찾기</a>&nbsp|
+                <a href ="<c:url value ='/findpw'/>">비밀번호 찾기</a>
+                
             </div>
 
 

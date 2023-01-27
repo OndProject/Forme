@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="includes/header.jsp"%>
 <%@ page session="false"%>
 <!DOCTYPE html>
 <html>
@@ -19,7 +20,7 @@
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/detail.css?ver=2">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/detail.css?ver=200">
 
 <!-- js분리안하고 사용하기 위해 -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -32,6 +33,8 @@
 </head>
 
 <body>
+
+ <!--greed 분리위한 container-->
     <div class="container">
         <!--greed 분리위한 row-->
         <div class="row">
@@ -92,158 +95,78 @@
 	                    </li>
 	                </ul>
 	                </nav>
-	                <br><br>
 	                <!--상세설명-->
 	                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-	                        <h4 id="scrollspyHeading1">클래스 소개</h4>
-	                            <pre>클래스 소개
-	
-	
-	
-	                                과학과 친해지고 창의적 사고력이 쑥쑥 성장하는
-	                                
-	                                특별한 과학 키트 클래스로 초대합니다! 
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                ﻿
-	                                
-	                                수업을 통해 성장해요! 
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                이런 친구에게 추천해요! 
-	                                
-	                                
-	                                
-	                                ✔ 과학이 어려운 친구
-	                                
-	                                ✔ '발명'에 관심이많은 친구
-	                                
-	                                ✔ 만들기를 좋아하는 친구
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                
-	                                클래스를 소개합니다! 
-	                                
-	                                
-	                                
-	                                ┃ 주요 활동
-	                                
-	                                
-	                                
-	                                ﻿✔ 우리 주변에서 '발명' 찾기
-	                                
-	                                ✔ 불편함을 바꾸는 발명
-	                                
-	                                ✔ 발명의 세 가지 방법 이해하기
-	                                
-	                                ✔ 자연을 닮은 발명
-	                                
+	                        <h4 id="scrollspyHeading1"></h4>
+	                        	<ul class ="su_form">
+	                        		<li class = "summary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  									<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+									</svg> 서울 | 영등포구 </li>
+	                        		<li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+									  <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+									  <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+									</svg> 1시간 ~ 1시간 30분 </li><br>
+	                        	</ul>
+	                        	<h4>클래스 소개</h4>
+	                            <pre>
+안녕하세요.
+
+양말을 생산하고 버려지는 산업 폐기물을 이용하여
+
+만드는 공예입니다.
+
+특별한 도구가 필요없는 장점을 가진 
+
+양말목 텀블러 가방만들기입니다.
+
+기본 뜨기와 함께 제가 연구한 기법을 동시에
+
+배울실수 있답니다.                                
 	                            </pre>
-	                        <h4 id="scrollspyHeading2">커리큘럼</h4>
-	                            <pre>커리큘럼
-	                                클래스를 신청하신 분들이 배우고 있는 커리큘럼입니다. 콘텐츠는 배우기 쉽게 영상, 수업노트, 첨부파일로 구성되어있습니다.
-	                                
-	                                WELCOME매력적인 사람이 되고 싶은 분들에게
-	                                1
-	                                안녕하세요! 마술사 김준표입니다
-	                                무료 공개
-	                                2
-	                                준비물을 소개합니다.
-	                                무료 공개
-	                                3
-	                                커리큘럼을 소개합니다.
-	                                무료 공개
-	                                4
-	                                마술은 마술만큼 매력이 중요합니다
-	                                무료 공개
-	                                
-	                                01첫인상이 결정되는 마술
-	                                1
-	                                부담없는 예언마술
-	                                2
-	                                첫 만남에 친해지는 휴대폰 마술
-	                                3
-	                                세 가지 물건 예언 ㅡ트리플 판타지아ㅡ
-	                                4
-	                                - 체크 포인트
-	                                
-	                                02매력적인 사람으로 인정받는 마술
-	                                1
-	                                동전 마술ㅡ 이지 코인ㅡ
-	                                2
-	                                모자 마술ㅡ 말리니 햇 트릭ㅡ
-	                                3
-	                                옷핀 손수건 마술ㅡ 폴스 핀ㅡ
-	                                4
-	                                - 체크 포인트
-	                                
-	                                03술자리에서 주인공이 되는 마술
-	                                1
-	                                손가락 만으로 병들기ㅡ 세 가지 방법ㅡ
-	                                2
-	                                과자 이동하기 ㅡ 스낵 일루젼ㅡ
-	                                3
-	                                휴대폰 번호 맞히기ㅡ 티오엑스아이씨ㅡ
-	                                4
-	                                - 체크 포인트
-	                                
-	                                04마법 같은 카드 마술 (난이도 하)
-	                                1
-	                                한 장의 카드 맞히기ㅡ 더 초이스ㅡ
-	                                2
-	                                두 장의 카드 맞히기ㅡ 포에프 설렉션ㅡ
-	                                3
-	                                - 체크 포인트
-	                                
-	                                05마법 같은 카드 마술 (난이도 중)
-	                                1
-	                                에이스 온 탑 ㅡ 기안 스칼리아 프로덕션ㅡ
-	                                2
-	                                우연의 일치ㅡ 민우형ㅡ
-	                                3
-	                                맨 위로 올라오는 카드ㅡ 앰비셔스ㅡ
-	                                4
-	                                - 체크 포인트
-	                                
-	                                06마법 같은 카드 마술 (난이도 상)
-	                                1
-	                                어떤 카드가 어디에 있든 찾아내기ㅡ acaanㅡ
-	                                2
-	                                예언ㅡ 캔낫비 익스플레인ㅡ
-	                                3
-	                                생각한 카드 맞히기ㅡ 쓰리웨이 띵킹ㅡ
-	                                4
-	                                체크 포인트
-	                                
-	                                OUTRO완강을 축하합니다.
-	                                1
-	                                완강을 축하합니다.</pre>
-	                        <h4 id="scrollspyHeading3">강사 소개</h4>
-	                            <p>...</p>
-	                        <h4 id="scrollspyHeading4">위치</h4>
+	                            <hr>
+	                        <h4 id="scrollspyHeading2"></h4><br>
+	                        	<br><br><h4>커리큘럼</h4>
+	                            <pre>
+1. 양말목 공예 설명
+2.색상 고르기(공예 특성상 샘플과 동일한 색상이 없을수 있습니다)
+3.기초 설명과 함께 제작을합니다.
+4.완성 후 사진 촬영
+
+소요시간은 1-1:30분 정도 걸립니다
+(개인차 있을수 있음)
+								</pre>
+								<hr>
+	                        <h4 id="scrollspyHeading3"></h4>
+	                        <br><br><h4>강사 소개</h4>
+	                            <pre>
+안녕하세요.
+
+지구를 생각하는 착한공예
+
+환경을 생각하는 공방을 운영중인
+
+예서향기공방입니다.
+								</pre>
+								<hr>
+								<br>
+	                        <h4 id="scrollspyHeading4"></h4>
+	                        <br><br><h4>위치</h4>
 	                            <!--지도-->
 	                           
 	                            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=156033f4a3eb36d4ea8b4352d5412fea&libraries=services"></script>
 	                            <div id="map" style="width:500px;height:400px;"></div>
-
-	                        <h4 id="scrollspyHeading5">클래스 후기</h4>
-	                            <p>...</p>
+							<br><br>
+	                        <h4 id="scrollspyHeading5"></h4>
+	                        <br><br><h4>클래스 후기</h4>
+	                            <li class = "left clearfix" data-rno = '12'>
+	                            <div>
+	                            	<div class ="header">
+	                            		<span>user</span>
+	                            		<span>2023/01/27</span>
+	                            	</div><!-- header -->
+	                            	<span>Review Test!</span>
+	                            </div>
+	                           	</li>
 	
 	                </div> 
 	                </div><!-- 이중 col-md-8 -->
@@ -258,16 +181,8 @@
 	                            <li class = name >강사명</li>
 	                            <li class ="date">클래스 일정</li>
 	                            <li><input type="date" name="startDate" id="startDate"></li>
-	                            <li class ="time">시간 선택</li>
-	                            <li><select name="language">
-		                            <option value="none">=== 시간 선택 ===</option>
-		                            <option value="korean">12:00 - 14:00</option>
-		                            <option value="english">14:00 - 16:00</option>
-		                            <option value="chinese">16:00 - 18:00</option>
-		                            <option value="spanish">18:00 - 20:00</option>
-		                            <option value="spanish">20:00 - 22:00</option>
-		                          </select>
-		                        </li>
+	                            <li class ="time">클래스 시작 시간</li>
+	                            <li class ="time2"> 오후 1시 </li>
 	                            <li>예약 금액   <div class = price>30,000원</div></li>
 	                            <li><hr></li>	                           
 	                        </ul>
@@ -281,10 +196,35 @@
 	                                    class = "heart" id ="heart2" alt="하트 이미지">
 	                                </span>
 	                            </button> <br>
-	                            <button class = "btn btn-2"><span class = "sub_2">클래스 신청</span></button>
-	                        </div><!--위시리스트 수강신청 버튼-->
+	                            <button type="button" class="btn btn-2" data-toggle="modal" data-target="#exampleModal">
+								<span class = "sub_2">클래스 신청</span></button>
+	                        </div><!--위시리스트 수강신청 버튼-->		
+	                        
+	                        <!-- Button trigger modal -->
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">신청 완료</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							         해당 클래스가 신청되었습니다.
+							      </div>
+							      <div class="modal-footer">
+							      	<button type="button" class="modal-mypage"  onclick="location.href='buyermypage'">마이페이지로 이동</button>
+							       	<button type="button" class="modal-close" data-dismiss="modal">닫기</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>	
+
+                        
 	                    </form>
-	                    <a href ="<c:url value ='/write'/>" class = "edit">수정하기</a>
+	                    <a href ="<c:url value ='/write'/>">수정하기</a>
 	                </div> <!--end appliaction-->
 	                </div><!-- 이중 col-md-4 -->
           </div><!-- 이중 row -->

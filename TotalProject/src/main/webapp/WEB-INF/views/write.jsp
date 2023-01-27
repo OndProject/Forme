@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include file="includes/header.jsp"%>
 <%@ page session="false"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +14,7 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/js/write.js?ver=12"></script>
+<script src="${pageContext.request.contextPath}/resources/js/write.js?ver=41"></script>
 <!-- 주소검색api -->
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
@@ -21,7 +23,7 @@
 <!-- 부가적인 테마 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/write.css?ver=1">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/write.css?ver=300">
 
 <!-- js분리안하고 사용하기 위해 -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -83,7 +85,9 @@
 	                            <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
 	                            <input type="text" id="sample6_address" placeholder="주소"><br>
 	                            <input type="text" id="sample6_detailAddress" placeholder="상세주소">
-	                            <input type="text" id="sample6_extraAddress" placeholder="참고항목">   
+	                            <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+	                            
+        
 						</form>
 	                </div> 
 	                </div><!-- 이중 col-md-8 -->
@@ -97,20 +101,23 @@
 	                            <li class = title>강의 제목</li>
 	                            <li class = name >강사명</li>
 	                            <li class ="date">클래스 일정</li>
-	                            <li><input type="date" name="startDate" id="startDate"></li>
+	                            <li><input type="date" name="startDate" id="startDate"> &nbsp~ &nbsp<input type="date" name="startDate" id="startDate"></li>
 	                            <li class ="time">시간 선택</li>
-	                            <li><select name="language">
-		                            <option value="none">=== 시간 선택 ===</option>
-		                            <option value="korean">12:00 - 14:00</option>
-		                            <option value="english">14:00 - 16:00</option>
-		                            <option value="chinese">16:00 - 18:00</option>
-		                            <option value="spanish">18:00 - 20:00</option>
-		                            <option value="spanish">20:00 - 22:00</option>
-		                          </select>
+	                            <li><select onchange="categoryChange(this)" class ="select">
+										<option>오전/오후</option>
+										<option value="a">오전</option>
+										<option value="b">오후</option>
+										<option value="c">협의</option>
+									</select>
+									
+									<select id="classtime" class = "select">
+									<option>클래스 시작 시간을 선택해주세요</option>
+									</select>
 		                        </li>
-	                            <li>예약 금액   <div class = price>30,000원</div></li>
-	                            <hr width="360px">
-	                        </ul>
+		                        <li> 소요 시간 <input type="text" class ="required_time" placeholder="ex) 1시간~1시간 30분"></li>
+	                            <li>예약 금액   <input type="text" class ="price"></li>	                      
+	                           	</ul>	
+	                            <hr width="360px">  
 	                        <div class ="btns">
 	                            <button class = "btn btn-1">    
 	                                <span class ="save_1">임시 저장 </span>
@@ -129,6 +136,7 @@
         <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-675ts4" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpwardIcon"><path d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg>
       </button>
     </div><!-- container -->
+
 
 
 
