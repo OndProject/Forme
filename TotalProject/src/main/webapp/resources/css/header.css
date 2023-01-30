@@ -148,13 +148,24 @@ body{
  }
 
  .log-btn{
-    background-color:rgb(47, 153, 244);
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    background-color:rgb(47, 153, 244) ;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2) ;
     border: 2px solid rgb(47, 153, 244);
-    border-radius : 15px;
-    color: white;
-    margin : 10px 140px 10px 0;
-    width : 60px;
-    height : 35px;
-    font-size: small;
+    border-radius : 15px ;
+    color: white ;
+    margin : 10px 120px 10px 0 ;
+    width : 60px ;
+    height : 35px ;
+    font-size: small ;
  }
+ 
+ .login-success{
+ 	magin: 10px;
+ 	text-align: center;
+ 	color: rgb(218, 41, 224) !important;
+ }
+
+ 
+ 
+ 
+ 

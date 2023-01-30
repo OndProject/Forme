@@ -8,7 +8,7 @@
     }
 
 /* 전체적인 */
-  .full-container{
+  .main{
     width: 100%;
     height: auto;
     display: grid;
@@ -17,12 +17,7 @@
     padding: 0%;
     margin: 0%;
   }
-  .item{
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    margin: 0%;
-  }
+ 
   .row{
     width:100%;
   }
@@ -33,43 +28,31 @@
 
 
   /* 네비 바 */
-  .navbar{ 
-    border: none; 
-    padding-bottom: 10px;  
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-weight: 1000; 
-    font-size: 18px;
-    text-transform: capitalize; 
-    height: 10px;
-    margin: 0;
-    padding: 0;
-    width: 99vw;
-  }
-  
-  .navbar-list {
-    width: 100%;
-    height: 0;
-    padding-left: 5%;
-  }
-  .navbar-list li { 
-    float: left;
-    padding: 0 20px; 
-    width: 18%;
-    background-color: white;
-  }
-  .navbar-default{
-    height: 10px;
-  }
-  .navbar-default .navbar-list > li > a{
-    color: #cff819;
-    background-color: white;
-    text-align: center;
-  }
-  .navbar-default .navbar-list > li > a:hover{
-    color: rgb(218, 41, 224);
-    background-color: white;
-  }
-  
+
+    .navbar{
+       /* background-color: rgb(47, 153, 244) !important; */
+       background-color:white!important;
+        border-radius: 5px;
+    }
+
+    .nav-link{
+        color : red;
+        margin: auto;
+    }
+
+    .nav-link:hover{
+        color: rgb(218, 41, 224);
+        background-color:white!important;
+    }
+    .nav-item{
+        padding: 0px 20px;
+    }
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+
   /* 메인 이미지*/
   @import "compass/css3";
   @font-face {
@@ -174,7 +157,7 @@
   .ct_title{
     width: 100%;
     padding-left: 100px;
-    margin: 30px;
+    margin: 30px 0px;
   }
   .ct_list{
     width: 100%;
@@ -295,17 +278,4 @@
     background-color: #acd8e2;
   }
 
-/*풋터*/
-  .footer footer {
-    padding-top: 4rem;
-    padding-bottom: 3.5rem;
-    background-color: snow;
-    margin-left: 200px;
-  }
-  .footer a:link {
-    color : black;
-  }
-  .footer a:hover {
-    color : gray;
-  }
   

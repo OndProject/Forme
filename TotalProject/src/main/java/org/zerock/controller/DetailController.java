@@ -8,17 +8,12 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @Log4j
+@RequestMapping("/")
 public class DetailController {
 	
 	@RequestMapping("/main")
 	public String main() {
 		return "main";
-	}
-	
-	@RequestMapping("/login")
-	public String login() {
-		return "login";
-
 	}
 	
 	@RequestMapping("/findid")
@@ -72,13 +67,13 @@ public class DetailController {
 	
 	@RequestMapping("/detail")
 	public String detail() {
-		return "detail";
+		return "board/detail";
 		
 	}
 	
 	@RequestMapping("/write")
 	public String write() {
-		return "write";
+		return "board/write";
 
 	}
 	@RequestMapping("/manager")
